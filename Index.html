@@ -1,0 +1,45 @@
+<!DOCTYPE html > 
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>SweetHour</title>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+      
+        <video id="VBG" poster="poster.JPG" autoplay muted loop>
+            <source src="backGround/war.MP4" type="video/mp4">
+        </video>
+       <div class="container">
+        <div class="menu" id="main">
+                <a id="about_button" onclick="social.classList.toggle('shown',false);about.classList.toggle('shown',true); this.classList.toggle('current',true);contacts_button.classList.toggle('current',false);" >Po-lio</a>
+                <a id="contacts_button" onclick="social.classList.toggle('shown',true);about.classList.toggle('shown',false); this.classList.toggle('current',true); about_button.classList.toggle('current',false);"  class="current">Contacts</a>
+               
+            
+        </div>
+
+        <div class="menu  shown" id="social">
+                <a target="_blank" href="https://t.me/SweetHour" style="color: #e37f22;">Telegram</a>      
+                 <a target="_blank" href="https://twitter.com/OurSweetHour" style="color: #326287;">Twitter</a>
+                 <a target="_blank" href="https://www.instagram.com/jalousie_czerwony/" style="color: #b01937;">Instagram</a>
+               
+        </div>
+
+        <div class="menu" id="about"  >
+            <a target="_blank" href="https://learn.unity.com/u/sweetesthour" style="color: #838383;">Unity</a>  
+            <a target="_blank" href="https://sweethour.itch.io/" style="color: #fa8e8c;">Itch.io</a> 
+            <a target="_blank" href="https://www.youtube.com/channel/UCOc8BtPBcWwDOmIwQaRxJ3A" style="color: #edb3ff;">youTube</a> 
+        </div>
+
+       </div>
+
+    </body>
+</html>
